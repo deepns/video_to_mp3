@@ -19,8 +19,8 @@ def extract_audio(source: str, bitrate="64k"):
     video.audio.write_audiofile(target, bitrate=bitrate, write_logfile=True)
 
 def main():
-    parser = argparse.ArgumentParser(description="Convert mp4 to mp3")
-    parser.add_argument("-s", "--source", type=str, help="Source file to convert", required=True)
+    parser = argparse.ArgumentParser(description="Extract audio from mp4 video")
+    parser.add_argument("-s", "--source", type=str, help="Source file to extract", required=True)
 
     args = parser.parse_args()
     extract_audio(args.source)
