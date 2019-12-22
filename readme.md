@@ -21,7 +21,7 @@ $ pip3 install -r requirements.txt
 
 ```text
 (.venv) $ ./app.py -h
-usage: main.py [-h] -s SOURCE
+usage: app.py [-h] -s SOURCE
 
 Extract audio from a video and save to mp3
 
